@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    height: 1000px;
+    font: 16px;
+    background-color: azure;
+}
+
+.semua {
+    background-color: rgb(177, 51, 110);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* ATAS */
+
+.semua .atas h1{
+    margin-bottom: -20px;
+    margin-top: -30px;
+    font-size: 50px;  
+    position: fixed;
+    width: 960px;
+    background-color: #45a049;
+
+}
+.semua .atas {
+    padding-top: 20px;
+    font-size: large;
+    font-weight: bold;  
+}
+
+.semua .atas ul {
+    display: inline-block;
+    margin-left: -40px;
+
+}
+.semua .atas ul li {
+    display: inline-block;
+    background-color: aqua;
+    padding: 5px 10px 5px 10px; 
+}
+
+.semua .atas ul li a:hover {
+                background-color: black;
+                color: azure;
+}
+
+/* GAMBAR */
+.semua .gambar {
+  
+    height: 300px;
+    background-image: url(https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/04/17/2955285085.jpg);
+    background-size: cover;
+    background-position: 0 -150px;
+    border-bottom: 5px solid blue;
+}
+
+.semua .judul{
+background-color: rgb(1, 13, 24);
+color: rgb(177, 51, 110);
+padding-top: 25px;
+}
+
+
+.semua .judul h1 {
+
+margin-top: -25px;
+padding-left: 5px;    
+}
+.semua .judul .penulis {
+
+ margin-top: -21px;
+padding-left: 5px;
+}
+
+.semua .isi .artikel {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    text-indent: 30px;
+    background-color: blanchedalmond;
+    width: 700px;
+    float: left;
+}
+
+.semua .isi .artikel p {
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+/* GAMBAR SERONG KIRI */
+.semua .isi .artikel img {
+    float: left;
+    margin-top:20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORMULIR */
+.semua .isi .formulir {
+    background-color: aqua;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 235px;
+    float: right;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+  border: 3px solid #555;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=submit]{
+    padding: 5px 5px 5px 5px;
+    background-color: orange;
+}
+
+
+/* BAWAH */
+.semua .bawah {
+    background-color: black;
+    color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+
+}
+    </style>
+</head>
+<body>
+
+<!-- Kontainer -->
+<div class="semua">
+
+    <!-- Atas -->
+    <div class="atas">
+            <h1>My website</h1></br>
+        <ul>
+            <li><a href="">satu</a></li>
+            <li><a href="">dua</a></li>
+            <li><a href="">tiga</a></li>
+            <li><a href="">empat</a></li>
+            <li><a href="">lima</a></li>
+        </ul>
+    </div>
+
+    <!-- gambar     -->
+    <div class="gambar"></div>
+    
+    <!-- judul -->
+    <div class="judul">
+        <h1>Konten</h1>
+        <p class="penulis">ditulis oleh: Natanael Rio Wijaya pada tanggal 26juni 2022</p>     
+    </div>
+
+    <!-- isi -->
+    <div class="isi cf">
+       <div class="artikel">
+            <img src="https://awsimages.detik.net.id/visual/2021/01/22/jenniiie-blackpink-dok-jennierubyjane_169.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad nobis cupiditate nulla perspiciatis, ducimus aliquam non consectetur unde distinctio officiis quo corporis illo accusantium, eveniet, magni itaque placeat laudantium?.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius praesentium repellat quisquam expedita aut, dolor illum, ipsum vel vitae nostrum aperiam facere in fugiat quis animi atque dignissimos! Iusto, esse!
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, commodi exercitationem facilis laudantium adipisci aperiam accusantium, quod quis nobis consectetur fugit, itaque nemo vero asperiores accusamus! Consequuntur aperiam ullam eum?.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit iusto aut tempora dolorum itaque omnis ad adipisci nihil placeat neque ipsa laborum ullam, non vel consequatur voluptas quo, similique quam?lorem.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quod recusandae iste mollitia temporibus eveniet quaerat doloremque natus maxime dolor optio cum deserunt sequi praesentium dolores ullam, ipsa ipsum reprehenderit? .Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit omnis enim officiis voluptatem quaerat molestiae labore facere. Laboriosam voluptatibus optio eaque veritatis, eos eveniet perferendis? Explicabo beatae distinctio quos in!</p>
+            </p>
+        </div> 
+            
+            <div class="formulir">
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>   
+        
+    </div>
+
+    <div class="bawah">
+        Pembuat Natanael Rio Wijaya
+    </div>
+    
+
+</div>
+
+</body>
+</html>
