@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Staatliches', sans-serif;
+    overflow-x:hidden ;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    background-color: brown;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 20px 0; */
+    color: blanchedalmond;
+    /* tengah */
+    height: 50px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /* menghilangkan titik  */
+    width: 15%;
+    justify-content: space-between;
+ 
+}
+
+nav ul li a{
+    color:black;
+    text-decoration: none; /* menghilangkan garis link */
+
+}
+
+nav .logo {
+    font-size: 30px;
+    letter-spacing: 3px;
+    
+
+   
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+nav ul li a{
+    color: blanchedalmond;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none; /* garis ke kanan  */
+    flex-direction: column;  /* jadikan kolom */
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top:-3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 3px;  /* Tumpul borndernya */
+    transition: all 0.5s;
+}
+
+
+/* Hamburger Menu Amation*/
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: blanchedalmond;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: blanchedalmond;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+
+
+/* Responsif CSS */
+
+/* Ukuran Tablet */
+@media screen and (max-width:768px) {
+    nav ul {
+        width: 40%;
+    }
+}
+/* Ukuran Android */
+@media screen and (max-width:576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        position:absolute;
+        right:0;
+        top:0;
+        width: 50%;
+        height:100vh;
+        flex-direction:column;
+        align-items:center;
+        justify-content: space-evenly;
+        background-color:rgb(56, 11, 11);
+        z-index: -1;
+        transform: translateX(100%); /* Posisi di pojokkan ke sumbu X kanan */
+        transition: all 1s;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+
+
+
+
+}
+
+
+
+
