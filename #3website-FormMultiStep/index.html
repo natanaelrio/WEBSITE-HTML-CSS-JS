@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="dalam">
+            <fieldset id="pertama">
+                <label for="nama" >Nama</label>
+                <input type="text" placeholder="nama">
+                <label for="alamat">Alamat</label>
+                <input type="text" placeholder="alamat">
+                <input type="button" name="name" onclick="next1()" value="Next"><br>
+            </fieldset>
+            <fieldset id="kedua">
+                <label for="nama" >Namaaa</label>
+                <input type="text" placeholder="nama">
+                <label for="alamat">Alamat</label>
+                <input type="text" placeholder="alamat">
+                <input type="button" name="previous" onclick="prev1()" value="Prev">
+                <input type="button" name="firstnext" onclick="next2()" value="Next">
+             </fieldset>
+             <fieldset id="ketiga">
+                <label for="nama" >Namaaaaaaaa</label>
+                <input type="text" placeholder="nama">
+                <label for="alamat">Alamat</label>
+                <input type="text" placeholder="alamat">   
+                <input type="button" name="previous" onclick="prev2()" value="Prev">
+                <input type="submit" name="register"  value="Register">
+          </fieldset>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
